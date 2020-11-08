@@ -6,6 +6,10 @@
 	color: #333;
 }
 
+h1 {
+	color: purple;
+}
+
 ol {
 	margin-left: 40px;
 }

@@ -6,16 +6,18 @@
 </head>
 
 <body>
-    <form>
+    <form method="POST" action="#">
         <label for="fname">First name:</label><br>
-        <input type="text" name="fname" required><br>
+        <input type="text" name="fname" id="fname" required><br>
         <label for="lname">Last name:</label><br>
-        <input type="text" name="lname" required><br>
+        <input type="text" name="lname" id="lname" required><br>
 
-        <input type="radio" name="gender" value="male" checked>
-        <label for="male">Male</label><br>
-        <input type="radio" name="gender" value="female">
-        <label for="female">Female</label><br>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male" checked>
+        <br>
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <br>
         <input type="submit" value="Send"/>
         <input type="reset" value="Reset"/>
     </form>
