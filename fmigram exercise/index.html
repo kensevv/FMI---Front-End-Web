@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FMInsgram</title>
+
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <div id="root">
+    <main>
+      <header class="main-header">
+        <!-- Logo -->
+        <img src="./logo.png" alt="Logo" class="logo" />
+
+        <!-- Search Field -->
+        <input placeholder="Search" class="searchfield" />
+
+        <!-- Navigation -->
+        <nav class="navigation">
+          <ul>
+            <li><img src="icons/home-icon.png" alt="home" /></li>
+            <li><img src="icons/messages-icon.png" alt="messages" /></li>
+            <li><img src="icons/explore-icon.png" alt="explore" /></li>
+            <li><img src="icons/heart-icon.png" alt="heart" /></li>
+
+            <li><img src="persons/Martin.png" class="profile-picture" alt="profile" /></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="content">
+
+        <!-- Main Content -->
+        <div class="main-content">
+          <section class="stories">
+            <ul>
+              <li>
+                <img src="./persons/Ivan.png" alt="Ivan" />
+                <label>Ivan</label>
+              </li>
+              <li>
+                <img src="./persons/Yana.png" alt="Yana" />
+                <label>Yana</label>
+              </li>
+              <li>
+                <img src="./persons/Lora.png" alt="Lora" />
+                <label>Lora</label>
+              </li>
+              <li><img src="./persons/Georgi.png" alt="Georgi" />
+                <label>Georgi</label>
+              </li>
+              <li>
+                <img src="./persons/Ivana.png" alt="Ivana" />
+                <label>Ivana</label>
+              </li>
+              <li>
+                <img src="./persons/Pesho.png" alt="Pesho" />
+                <label>Pesho</label>
+              </li>
+              <li>
+                <img src="./persons/Mimi.png" alt="Mimi" />
+                <label>Mimi</label>
+              </li>
+            </ul>
+          </section>
+
+          <article class="post">
+            <header class="post-header">
+              <div class="post-person">
+                <img src="./persons/Ivan.png" alt="Ivan" class="post-header-img" />
+                <label>Ivan Ivanov</label>
+              </div> 
+
+              <img src="./icons/messages-icon.png" alt="more" />
+            </header>
+
+            <img src="./feed-img.jpg" alt="Image" class="post-img"/>
+
+            <div class="post-actions-wrapper">
+              <div class="icon-actions">
+                <ul>
+                  <li>
+                    <img src="./icons/heart-icon.png" alt="like" />
+                  </li>
+                  <li>
+                    <img src="./icons/comment-icon.png" alt="comment" />
+                  </li>
+                  <li>
+                    <img src="./icons/messages-icon.png" alt="message" />
+                  </li>
+                </ul>
+
+                <img src="./icons/save-icon.png" alt="save" />
+              </div>
+            </div>
+
+            <div class="post-likes">
+              <img src="./persons/Ivan.png" alt="Ivan" />
+              <label>Liked by Ivan Ivanov and 37 others</label>
+            </div>
+
+            <span class="post-since">38 minutes ago</span>
+
+            <footer>
+              <input placeholder="Add a comment..." />
+              <button>Post</button>
+            </footer>
+          </article>
+        </div>
+        <!-- Side Content (Profile) -->
+        <aside class="side-content">
+          <img src="./persons/Martin.png" alt="Martin" />
+          
+          <div class="names">
+            <span>Martin</span>
+            <span>Martin Hristov</span>
+          </div>
+
+          <button>Switch</button>
+        </aside>
+
+      </div>
+    </main>
+
+  </div>
+</body>
+
+</html>

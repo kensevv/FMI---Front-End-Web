@@ -1,0 +1,277 @@
+body {
+  margin: 0;
+}
+
+.post-actions-wrapper img,
+.navigation img,
+.post header img {
+  height: 28px;
+}
+
+.navigation img.profile-picture {
+  border: 1px solid #b9b9b9;
+  box-sizing: border-box;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #b9b9b9;
+  box-sizing: border-box;
+  padding: 8px 15%;
+}
+
+.logo {
+  height: 42px;
+}
+
+.searchfield {
+  height: 26px;
+  width: 25%;
+  background: #fafafa;
+  border: 1px solid #b9b9b9;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.post-actions-wrapper ul,
+.stories ul,
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.navigation ul li:not(:first-child) {
+  margin-left: 12px;
+}
+
+.stories {
+  border: 1px solid #b9b9b9;
+  box-sizing: border-box;
+  padding: 24px 24px 5px 24px;
+  border-radius: 3px;
+}
+
+.content {
+  padding: 42px 15%;
+  display: flex;
+}
+
+.post-likes img,
+.post header img:first-child,
+.stories img {
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid red;
+  object-position: top;
+  height: 60px;
+  width: 60px;
+}
+
+.stories li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stories li:not(:last-child) {
+  margin-right: 8px;
+}
+
+.post {
+  border: 1px solid #b9b9b9;
+  box-sizing: border-box;
+  margin-top: 36px;
+  border-radius: 3px;
+}
+
+.post-person {
+  display: flex;
+  align-items: center;
+}
+
+.post-header {
+  display: flex;
+  padding: 8px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
+}
+
+.post header img.post-header-img {
+  width: 40px;
+  height: 40px;
+}
+
+.post-person label {
+  margin-left: 4px;
+}
+
+.post-actions-wrapper ul {
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.post-actions-wrapper li:not(:first-child) {
+  margin-left: 18px;
+}
+
+.post-actions-wrapper .icon-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 8px;
+  box-sizing: border-box;
+}
+
+.post-likes img {
+  width: 30px;
+  height: 30px;
+}
+
+.post-likes {
+  padding: 8px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.post-likes label {
+  margin-left: 4px;
+}
+
+.post-since {
+  padding: 8px;
+  box-sizing: border-box;
+  color: grey;
+}
+
+.post footer {
+  margin-top: 12px;
+  border-top: 1px solid #b9b9b9;
+  box-sizing: border-box;
+  height: 42px;
+  display: flex;
+}
+
+.post footer input {
+  height: 100%;
+  flex: 1;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: transparent;
+  border: none;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.post footer button {
+  width: 80px;
+  height: 100%;
+  border: none;
+  background: transparent;
+  color: #C6DFF9;
+  font-size: 16px;
+}
+
+.side-content img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.side-content {
+  padding: 24px 0 5px 24px;
+  box-sizing: border-box;
+  flex: 1;
+  height: 110px;
+  align-items: center;
+}
+
+.side-content {
+  display: flex;
+}
+
+.names span {
+  color: grey;
+}
+.names span:first-child {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+}
+
+.names {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+}
+
+.side-content button {
+  padding: 0;
+  margin: 0;
+  height: 42px;
+  width: 42px;
+  background: transparent;
+  border: none;
+  color: #59A2F0;
+  font-weight: bold;
+  margin-left: auto;
+}
+
+.stories img {
+  border-color: white !important;
+  position: relative;
+}
+
+.stories li {
+  position: relative;
+}
+
+.stories li::after {
+  content: "";
+  bottom: 24px;
+  top: -2px;
+  right: -2px;
+  left: -2px;
+  position: absolute;
+  z-index: -1;
+  background: linear-gradient(90deg, rgba(250,126,30,1) 0%, rgba(214,41,118,1) 100%);
+  border-radius: 50%;
+}
+
+.stories li label {
+  margin-top: 8px;
+}
+
+
+/* Media query for screens <= 1024px */
+
+@media (max-width: 1024px) {
+  .side-content {
+    display: none;
+  }
+}
+
+@media (max-width: 740px) {
+  .content {
+    padding: 42px 24px;
+  }
+
+  .searchfield {
+    display: none;
+  }
+}
