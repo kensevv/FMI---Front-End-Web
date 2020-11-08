@@ -1,0 +1,25 @@
+#red {
+    margin-top: 300px;
+    margin-left: 400px;
+}
+
+#silver {
+    margin-top: 350px;
+    margin-left: 450px;
+}
+
+#green {
+    position: fixed;
+    top: 100px;
+    right: 0;
+}
+
+#blue {
+    position: relative;
+}
+
+#yellow {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

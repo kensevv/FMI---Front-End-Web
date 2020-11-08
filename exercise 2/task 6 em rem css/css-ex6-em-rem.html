@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <meta charset="UTF-8">
+    <title>Rem/Ee Exercise</title>
+    <style>
+        html {
+            font-size: 16px;
+        }
+        ul {
+            font-size: 12px;
+        }
+        .list-item {
+            font-size: 3em;
+        }
+		
+		/* Additional styles (not relevant for the task)*/
+		
+		.checkResult {
+			border: 1px solid brown;
+		}
+		.infoFontSize  {
+			color: blue;
+			font-size: 16px;
+        }        
+        
+        #firstElement {
+            font-size: 1em;
+        }
+        
+        #secondElement {
+            font-size: 1rem;
+        }
+        
+        #thirdElement {
+            font-size: 0.5em;
+        }
+
+    </style>
+    <script>
+        calculateSizes = function () {
+            var firstElement = document.getElementById('firstElement');
+            var secondElement = document.getElementById('secondElement');
+            var thirdElement = document.getElementById('thirdElement');
+
+            var firstElementStyle = window.getComputedStyle(firstElement);
+            var secondElementStyle = window.getComputedStyle(secondElement);
+            var thirdElementStyle = window.getComputedStyle(thirdElement);
+
+            document.getElementById('div1').innerText = 'Font size of first element is: ' + firstElementStyle.fontSize;
+            document.getElementById('div2').innerText = 'Font size of second element is:' + secondElementStyle.fontSize;
+            document.getElementById('div3').innerText = 'Font size of third element is:' + thirdElementStyle.fontSize;
+			setTimeout(()=>calculateSizes(), 1000);
+        }
+
+        document.addEventListener("DOMContentLoaded", function(event) {
+            calculateSizes();
+        });
+    </script>
+</head>
+<body>
+    <ul>
+        <li id="firstElement">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        <li id="secondElement">Donec quis est in ipsum sodales porttitor.</span></li>
+        <li class="list-item"><span id="thirdElement">Cras consequat lorem at nibh pulvinar, vel ultrices ante fermentum.</span></li>
+        <li>Ut malesuada elit a arcu convallis suscipit.</li>
+        <li>Pellentesque congue odio vitae ligula pulvinar tempus malesuada quis nisl.</li>
+        <li>Maecenas mattis nibh ut sodales iaculis.</li>
+    </ul>
+	<div class="checkResult">
+		<div id="div1"></div>
+		<div id="div2"></div>
+		<div id="div3"></div>
+	</div>
+</body>
+</html>

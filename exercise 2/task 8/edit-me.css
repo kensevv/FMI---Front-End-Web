@@ -1,0 +1,17 @@
+#container1 {
+    padding: 5px;
+    margin: 5px;
+    border: 5px solid #5b4000;
+
+    box-sizing: border-box;
+    width: 390px;
+    height: 90px;
+}
+
+#container2 {
+    padding: 5px;
+    border: 5px solid #0e5252;
+
+    box-sizing: border-box;
+    height: 100px;
+}

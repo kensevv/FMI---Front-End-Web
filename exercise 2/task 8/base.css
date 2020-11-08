@@ -1,0 +1,27 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #ffe1b6;
+}
+
+#sandbox {
+	display: block;
+	width: 400px;
+	height: 200px;
+	background-color: #ffffff;
+	position: absolute;
+	top: calc(50% - 150px);
+	left: calc(50% - 200px);
+	overflow: hidden;
+}
+
+#container1 {
+	background-color: #996b00;
+	color: #ffffff;
+}
+
+#container2 {
+	width: 100%;
+	background-color: #168282;
+	color: #ffffff;
+}
