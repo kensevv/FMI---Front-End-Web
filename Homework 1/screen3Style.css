@@ -1,0 +1,95 @@
+body, html, div#root {height: 100%; }
+
+body {
+    font-size: 16px;
+    margin: 0;
+}
+
+* {
+    font-family: Helvetica, sans-serif;
+}
+
+div#root {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    height: 100%;
+    background: linear-gradient(-100deg, #A2F2F1 0%, #B19AFE 100%);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding-left: 5%;
+    padding-right: 5%;
+
+    height: 9%;
+  }
+
+.searchfield {
+    height: 40%;
+    width: 25%;
+    background: #f8f5f5;
+    border: 1px solid #b9b9b9;
+    border-radius: 20px;
+    padding-left: 1%;   
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+main > div {
+    padding: 7px;
+}
+
+#myProfile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: white;
+}
+
+.avatar {
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    height: 60px;
+    width: 60px;
+}
+
+#Info {
+    display: flex;
+    align-items: center;
+
+    background-color: #f8f5f5;
+}
+
+#Info p {
+    display: flex;
+    flex-direction: column;
+}
+
+#number {
+    font-weight: bold;
+    color: rgb(0, 255, 221);
+}
+
+#logout {
+    border-radius: 20px;
+    background-color: inherit;
+
+    color: rgb(0, 255, 221);
+    border-color: rgb(0, 255, 221);
+    max-width: 10rem;
+    width: 25%;
+    height: 2rem;
+}
+
