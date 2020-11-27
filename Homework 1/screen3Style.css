@@ -93,14 +93,14 @@ main{
 
 #number {
     font-weight: bold;
-    color: rgb(0, 255, 221);
+    color: #00FFFF;
 }
 
 #logout {
     border-radius: 20px;
     background-color: inherit;
-    color: rgb(0, 255, 221);
-    border-color: rgb(0, 255, 221);
+    color: #ADD8E6;
+    border-color: #00FFFF;;
     max-width: 10rem;
     width: 25%;
     height: 2rem;
@@ -126,8 +126,6 @@ main{
 #newPostAvatar {
     width: 2rem;
     height: 2rem;
-
-    
 }
 
 #Feed .avatar {
@@ -147,7 +145,7 @@ main{
     height: 1.5rem;
 }
 #SaySomething::placeholder {
-    color: rgb(0, 255, 221);
+    color: #00FFFF;
 }
 
 .post {
@@ -194,4 +192,12 @@ bdi {
 .thumbsLabel {
     font-size: 1rem;
     margin-right: 2rem;
+}
+
+@media screen and (max-width: 890px) {
+    #Feed {
+        max-width: 18rem;
+        width: 100%;
+        margin-right: 5px;
+    }
 }
