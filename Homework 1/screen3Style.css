@@ -32,21 +32,32 @@ header {
 
 .searchfield {
     height: 40%;
-    width: 25%;
+    width: 15%;
     background: #f8f5f5;
     border: 1px solid #b9b9b9;
     border-radius: 20px;
-    padding-left: 1%;   
+    padding-left: 10px;   
 }
 
 main {
     display: flex;
     justify-content: center;
+    align-content: flex-start;
     flex-wrap: wrap;
 }
 
-main > div {
+main{
     padding: 7px;
+}
+
+#Profile {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 18rem;
+    width: 100%;
+    height: fit-content;
+    padding-right: 5px;
 }
 
 #myProfile {
@@ -68,8 +79,11 @@ main > div {
 #Info {
     display: flex;
     align-items: center;
-
+    justify-content: space-between;
     background-color: #f8f5f5;
+
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #Info p {
@@ -85,11 +99,99 @@ main > div {
 #logout {
     border-radius: 20px;
     background-color: inherit;
-
     color: rgb(0, 255, 221);
     border-color: rgb(0, 255, 221);
     max-width: 10rem;
     width: 25%;
     height: 2rem;
+
+    margin-left: 50px;
 }
 
+#Feed {
+    background-color: white;
+    max-width: 25rem;
+    width: 100%;
+    height: fit-content;
+}
+
+#newPost {
+  border-bottom: 2px solid #b9b9b9;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+
+#newPostAvatar {
+    width: 2rem;
+    height: 2rem;
+
+    
+}
+
+#Feed .avatar {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#SaySomething {
+    border: 1px solid #b9b9b9;
+    border-radius: 20px;
+    padding-left: 10px;
+
+    margin-right: 20px;
+    margin-left: 10px;
+    width: 100%;
+    height: 1.5rem;
+}
+#SaySomething::placeholder {
+    color: rgb(0, 255, 221);
+}
+
+.post {
+    display: flex;
+    justify-content: space-between;
+}
+
+#post1 {
+    border-bottom: 2px solid #b9b9b9;
+
+    display: flex;
+
+    padding-bottom: 10px;
+}
+
+#post2 {
+   padding-bottom: 10px;
+}
+
+
+#feedAvatar {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.X {
+    width: 15px;
+    height: 15px;
+
+    padding-top: 5px;
+    padding-right: 5px;
+}
+
+bdi {
+    font-size: small;
+    color:grey;
+}
+
+.thumbs {
+    width: 1rem;
+    height: 1rem;
+}
+
+.thumbsLabel {
+    font-size: 1rem;
+    margin-right: 2rem;
+}
