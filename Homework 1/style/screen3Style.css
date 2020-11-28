@@ -37,6 +37,11 @@ header {
     border: 1px solid #b9b9b9;
     border-radius: 20px;
     padding-left: 10px;   
+
+    background-image: url("../icons/toolbar_find.ico");
+    background-repeat: no-repeat;
+    background-position: 95%;
+    background-size: 15px;
 }
 
 main {
@@ -66,6 +71,9 @@ main{
     align-items: center;
 
     background-color: white;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .avatar {
@@ -74,6 +82,8 @@ main{
     object-position: top;
     height: 60px;
     width: 60px;
+
+    margin-bottom: 5px;
 }
 
 #Info {
@@ -93,14 +103,14 @@ main{
 
 #number {
     font-weight: bold;
-    color: #00FFFF;
+    color: #54bdd6;
 }
 
 #logout {
     border-radius: 20px;
     background-color: inherit;
-    color: #ADD8E6;
-    border-color: #00FFFF;;
+    color: #54bdd6;
+    border-color: #54bdd6;;
     max-width: 10rem;
     width: 25%;
     height: 2rem;
@@ -132,6 +142,7 @@ main{
     margin-left: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
+    margin-right: 10px;
 }
 
 #SaySomething {
@@ -143,9 +154,16 @@ main{
     margin-left: 10px;
     width: 100%;
     height: 1.5rem;
+
+    background-image: url("../icons/saysmthicon.png");
+    background-repeat: no-repeat;
+    background-position: 95%;
+    background-size: 15px;
+
 }
+
 #SaySomething::placeholder {
-    color: #00FFFF;
+    color: #54bdd6;
 }
 
 .post {
