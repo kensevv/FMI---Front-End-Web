@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Flutter - Posts</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+	 crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+
+<body>
+	<header class="posts-header">
+		<h1 class="posts-page-header">Flutter</h1>
+		<div class="posts-search">
+			<input type="text" placeholder="Search" />
+			<button class="fa fa-search"></button>
+		</div>
+	</header>
+
+	<div class="container-bg">
+		<main class="container">
+			<aside class="profile">
+				<figure class="profile-avatar">
+					<img src="images/avatar.png" alt="BP" class="profile-image" width="84" height="84" />
+					<figcaption class="profile-name" id="profile-name"></figcaption>
+				</figure>
+
+				<div class="profile-details">
+					<div class="profile-info">
+						<h3>Posts</h3>
+						<p id="profile-posts-count"></p>
+					</div>
+					<div class="profile-info">
+						<h3>Reactions</h3>
+						<p id="profile-likes-count"></p>
+					</div>
+
+					<button class="profile-button" id="logout-btn">Log Out</button>
+				</div>
+			</aside>
+			<section class="posts">
+				<header class="pots-section-header">
+					<figure class="profile-avatar post-section-header-avatar">
+						<img src="images/avatar.png" alt="BP" class="profile-image">
+					</figure>
+					<div class="post-section-input-container">
+						<form method="POST" id="new-post">
+							<input type="text" placeholder="Say something" id="new-post-text">
+							<button class="far fa-comment-alt"></button>
+						</form>
+					</div>
+				</header>
+				<div class="lds-ripple" id="loader"><div></div><div></div></div>
+				<section class="posts-section" id="post-container">
+				</section>
+			</section>
+		</main>
+	</div>
+
+	<script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
+	<script src="scripts/db-facade.js"></script>
+	<script src="scripts/controller.js"></script>
+	<script src="scripts/viewposts.js" defer></script>
+</body>
+</html>

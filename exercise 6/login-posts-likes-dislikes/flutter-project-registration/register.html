@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Flutter - Register</title>
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+	<div class="auth">
+		<form class="auth-form" id="register-form">
+			<h1 class="auth-title">Flutter</h1>
+
+			<h2 class="auth-subtitle">Join the community</h2>
+
+			<div class="errors" id="errors"></div>
+
+			<input type="text" name="username" placeholder="User Name" class="auth-input" />
+			<input type="email" name="email" placeholder="Email" class="auth-input" />
+			<input type="password" name="password" placeholder="Password" class="auth-input" />
+
+			<div class="auth-actions">
+				<button type="submit" class="auth-button">Submit</button>
+			</div>
+		</form>
+
+		<!--<span class="decoration decoration1"></span>-->
+		<!--<span class="decoration decoration2"></span>-->
+		<!--<span class="decoration decoration3"></span>-->
+		<!--<span class="decoration decoration4"></span>-->
+	</div>
+	<!-- Loads firbase client API, initializes db facade & loads the controller code -->
+	<script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
+	<script src="scripts/db-facade.js"></script>
+	<script src="scripts/controller.js"></script>
+</body>
+
+</html>
