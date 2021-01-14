@@ -1,0 +1,55 @@
+Pesho just finished his programming courses in the university - Introduction in programming with Java and Object Oriented C++ and he decided to take a look at a scripting language. He decided to pick JavaScript as the most popular language for writing for the Web.
+
+Pesho took a look at the variables, functions, objects, objects, ... objects ... and he noticed that there is something strange in the JavaScript's data structures. He wanted to know what is happening under the hood, so he started with exploring the types of the diferent variables.
+
+Pesho was given with a list of variables e.g. [1, 4.2, "42", { "key": "value" }, ["4", 2, [3, 4]], function () {}, ...]. His task is to check the different variables and perform actions based on their types.
+
+- Count all the numbers in the array and push the result as first element in the result array if there are more than 0 numbers found
+- If the element is a string, reverse it and push it to the result array
+- If the element is an object(not a function, neither array) push a new string represeting "key: value" of the object e.g. { person: Martin } => "person: Martin" * we wont pass objects with more than a single key
+- If the element is an Array
+    - if the array is nested it push it flattened e.g. [1, 2, [3, 4]] => [1, 2, 3, 4] to the result array
+    - if the array is not nested push the array but sorted (alphabetically)
+- If the element is a function call the function with argument 42 and push the result to the result array
+In order to parse the input (it is currently a string) you should use eval()
+
+function processData(input) {
+    var result = [];
+    input = eval(input);
+    
+    console.log(JSON.stringify(result));
+} 
+Input Format
+
+The first and only line contains a string representing an array of objects.
+
+Constraints
+
+No real Constraints. The input will be a string.
+
+Output Format
+
+The return value should be an array as explained above
+
+Sample Input 0
+
+[1,2,3,4]
+Sample Output 0
+
+[4]
+Sample Input 1
+
+["test", 1, "world", "42", 2]
+Sample Output 1
+
+[2,"tset","dlrow","24"]
+Explanation 1
+
+1 and 2 are numbers = > the counf of numbers is 2 and this is pushed as first element of the array. The other elements are strings and they are revered
+
+Sample Input 2
+
+[1, "123456789", [1, 2, [3, 4]], function(a) { return a; }, { "name": "Martin" }, 3, 4, 5, function(a) { return (a + 1)}]
+Sample Output 2
+
+[4,"987654321",[1,2,3,4],42,"name: Martin",43]

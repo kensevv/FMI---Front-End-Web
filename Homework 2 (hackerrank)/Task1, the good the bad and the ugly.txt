@@ -1,0 +1,30 @@
+Let me explain what a good string is. It's a string of which all distinct character are present have the same count. Let's show an example, so it will be made clear:
+
+'ggghhhmmmdddlll' is a good string (not really need to explain it :))
+
+'gghmmmdddll' is not (g and l are appears two times, while m and d appear three times and h appears only once).
+Since some strings my be easily made good, we want you to find the if string could be made good. The characters' case is not important. For example 'GgHH' is still good.
+
+Input Format
+
+The first and only line contains the string that we give you.
+
+Constraints
+
+No real Constraints. The input will be a string.
+
+Output Format
+
+Output GOOD if the string is already good. Output BAD if the string can be converted to "GOOD" by removing just one character. Otherwise print UGLY
+
+Sample Input
+
+ggghhhmmmdddlll
+
+Sample Output
+
+GOOD
+
+Explanation
+
+'ggghhhmmmdddlll' is a good string, it countains every character exactly 3 times
